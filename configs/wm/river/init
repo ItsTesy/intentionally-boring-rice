@@ -1,0 +1,44 @@
+#!/bin/sh
+
+riverctl border-width 1
+riverctl background-color 0x000000
+riverctl border-color-focused 0x4a4a4a
+riverctl border-color-unfocused 0x2a2a2a
+riverctl border-color-urgent 0xa04040
+riverctl focus-follows-cursor disabled
+riverctl hide-cursor timeout 8000
+riverctl rule-add -app-id '*' ssd
+
+riverctl map normal Super Return spawn '@TERM@'
+riverctl map normal Super D spawn '@MENU@'
+riverctl map normal Super+Shift Q close
+riverctl map normal Super F toggle-fullscreen
+riverctl map normal Super+Shift Space toggle-float
+riverctl map normal Super+Shift E exit
+
+riverctl map normal Super+Shift C spawn "IBR_RELOAD=1 $HOME/.config/river/init"
+
+riverctl map normal Super H focus-view left
+riverctl map normal Super J focus-view down
+riverctl map normal Super K focus-view up
+riverctl map normal Super L focus-view right
+riverctl map normal Super+Shift H swap left
+riverctl map normal Super+Shift J swap down
+riverctl map normal Super+Shift K swap up
+riverctl map normal Super+Shift L swap right
+
+for i in 1 2 3 4 5 6 7 8 9; do
+	tags=$((1 << (i - 1)))
+	riverctl map normal Super "$i" set-focused-tags $tags
+	riverctl map normal Super+Shift "$i" set-view-tags $tags
+done
+
+riverctl map normal None Print spawn '@SHOT@'
+
+rivertile -view-padding 0 -outer-padding 0 &
+riverctl default-layout rivertile
+
+[ "$IBR_RELOAD" ] || ~/.config/ibr/autostart &
+
+riverctl map-pointer normal Super BTN_LEFT move-view
+riverctl map-pointer normal Super BTN_RIGHT resize-view

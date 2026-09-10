@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_config xmlns="http://openbox.org/3.4/rc">
+
+<focus>
+  <focusNew>yes</focusNew>
+  <followMouse>no</followMouse>
+  <focusLast>yes</focusLast>
+  <raiseOnFocus>no</raiseOnFocus>
+</focus>
+
+<theme>
+  <name>ibr</name>
+  <titleLayout></titleLayout>
+  <keepBorder>yes</keepBorder>
+  <animateIconify>no</animateIconify>
+  <font place="ActiveWindow">
+    <name>JetBrainsMono Nerd Font</name>
+    <size>10</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+  </font>
+  <font place="InactiveWindow">
+    <name>JetBrainsMono Nerd Font</name>
+    <size>10</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+  </font>
+  <font place="MenuHeader">
+    <name>JetBrainsMono Nerd Font</name>
+    <size>10</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+  </font>
+  <font place="MenuItem">
+    <name>JetBrainsMono Nerd Font</name>
+    <size>10</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+  </font>
+  <font place="ActiveOnScreenDisplay">
+    <name>JetBrainsMono Nerd Font</name>
+    <size>10</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+  </font>
+  <font place="InactiveOnScreenDisplay">
+    <name>JetBrainsMono Nerd Font</name>
+    <size>10</size>
+    <weight>normal</weight>
+    <slant>normal</slant>
+  </font>
+</theme>
+
+<desktops>
+  <number>9</number>
+  <firstdesk>1</firstdesk>
+  <popupTime>0</popupTime>
+</desktops>
+
+<resize>
+  <drawContents>yes</drawContents>
+  <popupShow>Never</popupShow>
+</resize>
+
+<margins>
+  <top>0</top>
+  <bottom>0</bottom>
+  <left>0</left>
+  <right>0</right>
+</margins>
+
+<keyboard>
+  <keybind key="W-Return"><action name="Execute"><command>@TERM@</command></action></keybind>
+  <keybind key="W-d"><action name="Execute"><command>@MENU@</command></action></keybind>
+  <keybind key="W-S-q"><action name="Close"/></keybind>
+  <keybind key="W-f"><action name="ToggleFullscreen"/></keybind>
+  <keybind key="W-S-space"><action name="ToggleAlwaysOnTop"/></keybind>
+  <keybind key="W-S-c"><action name="Reconfigure"/></keybind>
+  <keybind key="W-S-e"><action name="Exit"><prompt>no</prompt></action></keybind>
+
+  <keybind key="W-h">
+    <action name="DirectionalCycleWindows">
+      <direction>west</direction>
+      <bar>no</bar>
+      <dialog>no</dialog>
+    </action>
+  </keybind>
+  <keybind key="W-j">
+    <action name="DirectionalCycleWindows">
+      <direction>south</direction>
+      <bar>no</bar>
+      <dialog>no</dialog>
+    </action>
+  </keybind>
+  <keybind key="W-k">
+    <action name="DirectionalCycleWindows">
+      <direction>north</direction>
+      <bar>no</bar>
+      <dialog>no</dialog>
+    </action>
+  </keybind>
+  <keybind key="W-l">
+    <action name="DirectionalCycleWindows">
+      <direction>east</direction>
+      <bar>no</bar>
+      <dialog>no</dialog>
+    </action>
+  </keybind>
+
+  <keybind key="W-S-h"><action name="MoveRelative"><x>-64</x><y>0</y></action></keybind>
+  <keybind key="W-S-j"><action name="MoveRelative"><x>0</x><y>64</y></action></keybind>
+  <keybind key="W-S-k"><action name="MoveRelative"><x>0</x><y>-64</y></action></keybind>
+  <keybind key="W-S-l"><action name="MoveRelative"><x>64</x><y>0</y></action></keybind>
+
+  <keybind key="W-1"><action name="GoToDesktop"><to>1</to></action></keybind>
+  <keybind key="W-2"><action name="GoToDesktop"><to>2</to></action></keybind>
+  <keybind key="W-3"><action name="GoToDesktop"><to>3</to></action></keybind>
+  <keybind key="W-4"><action name="GoToDesktop"><to>4</to></action></keybind>
+  <keybind key="W-5"><action name="GoToDesktop"><to>5</to></action></keybind>
+  <keybind key="W-6"><action name="GoToDesktop"><to>6</to></action></keybind>
+  <keybind key="W-7"><action name="GoToDesktop"><to>7</to></action></keybind>
+  <keybind key="W-8"><action name="GoToDesktop"><to>8</to></action></keybind>
+  <keybind key="W-9"><action name="GoToDesktop"><to>9</to></action></keybind>
+
+  <keybind key="W-S-1"><action name="SendToDesktop"><to>1</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-2"><action name="SendToDesktop"><to>2</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-3"><action name="SendToDesktop"><to>3</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-4"><action name="SendToDesktop"><to>4</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-5"><action name="SendToDesktop"><to>5</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-6"><action name="SendToDesktop"><to>6</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-7"><action name="SendToDesktop"><to>7</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-8"><action name="SendToDesktop"><to>8</to><follow>no</follow></action></keybind>
+  <keybind key="W-S-9"><action name="SendToDesktop"><to>9</to><follow>no</follow></action></keybind>
+
+  <!-- no shell here -->
+  <keybind key="Print"><action name="Execute"><command>sh -c '@SHOT@'</command></action></keybind>
+</keyboard>
+
+<mouse>
+  <context name="Frame">
+    <mousebind button="W-Left" action="Drag"><action name="Move"/></mousebind>
+    <mousebind button="W-Right" action="Drag"><action name="Resize"/></mousebind>
+  </context>
+  <context name="Client">
+    <mousebind button="Left" action="Press"><action name="Focus"/><action name="Raise"/></mousebind>
+    <mousebind button="Middle" action="Press"><action name="Focus"/><action name="Raise"/></mousebind>
+    <mousebind button="Right" action="Press"><action name="Focus"/><action name="Raise"/></mousebind>
+  </context>
+</mouse>
+
+<applications>
+  <application class="*">
+    <decor>no</decor>
+  </application>
+</applications>
+
+</openbox_config>

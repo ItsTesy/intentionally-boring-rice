@@ -1,0 +1,35 @@
+super + Return
+	@TERM@
+
+super + d
+	@MENU@
+
+super + shift + q
+	bspc node -c
+
+super + f
+	bspc node -t ~fullscreen
+
+super + shift + space
+	bspc node -t ~floating
+
+super + shift + c
+	bspc wm -r; pkill -USR1 -x sxhkd
+
+super + shift + e
+	bspc quit
+
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+super + shift + {h,j,k,l}
+	bspc node -s {west,south,north,east} --follow
+
+super + {1-9}
+	bspc desktop -f '^{1-9}'
+
+super + shift + {1-9}
+	bspc node -d '^{1-9}'
+
+Print
+	@SHOT@

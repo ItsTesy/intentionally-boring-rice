@@ -1,0 +1,47 @@
+#!/bin/sh
+
+theme="$HOME/.local/share/themes/ibr/openbox-3/themerc"
+
+if [ ! -f "$theme" ]; then
+	mkdir -p "${theme%/*}"
+	cat >"$theme" <<'EOF'
+border.width: 1
+padding.width: 0
+padding.height: 0
+window.handle.width: 0
+window.client.padding.width: 0
+window.client.padding.height: 0
+window.active.border.color: #4a4a4a
+window.inactive.border.color: #2a2a2a
+window.active.title.bg: flat solid
+window.active.title.bg.color: #101010
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #101010
+window.active.label.bg: parentrelative
+window.inactive.label.bg: parentrelative
+window.active.label.text.color: #b8b8b8
+window.inactive.label.text.color: #6a6a6a
+menu.border.width: 1
+menu.border.color: #2a2a2a
+menu.title.bg: flat solid
+menu.title.bg.color: #101010
+menu.title.text.color: #6a6a6a
+menu.items.bg: flat solid
+menu.items.bg.color: #101010
+menu.items.text.color: #b8b8b8
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #2a2a2a
+menu.items.active.text.color: #b8b8b8
+osd.border.width: 1
+osd.border.color: #2a2a2a
+osd.bg: flat solid
+osd.bg.color: #101010
+osd.label.bg: parentrelative
+osd.label.text.color: #b8b8b8
+EOF
+	openbox --reconfigure
+fi
+
+xsetroot -solid '#000000'
+
+~/.config/ibr/autostart &

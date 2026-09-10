@@ -1,0 +1,93 @@
+prefer-no-csd
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+animations {
+    off
+}
+
+layout {
+    gaps 0
+    background-color "#000000"
+
+    focus-ring {
+        off
+    }
+
+    border {
+        on
+        width 1
+        active-color "#4a4a4a"
+        inactive-color "#2a2a2a"
+        urgent-color "#a04040"
+    }
+
+    shadow {
+        off
+    }
+
+    tab-indicator {
+        off
+    }
+
+    insert-hint {
+        off
+    }
+}
+
+overview {
+    backdrop-color "#000000"
+}
+
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+spawn-sh-at-startup "~/.config/ibr/autostart"
+
+binds {
+    // raw string or the quotes break it
+    Mod+Return { spawn-sh r#"@TERM@"#; }
+    Mod+D { spawn-sh r#"@MENU@"#; }
+    Mod+Shift+Q { close-window; }
+    Mod+F { fullscreen-window; }
+    Mod+Shift+Space { toggle-window-floating; }
+
+    Mod+Shift+C { spawn-sh "touch ~/.config/niri/config.kdl"; }
+    Mod+Shift+E { quit skip-confirmation=true; }
+
+    Mod+H { focus-column-left; }
+    Mod+J { focus-window-down; }
+    Mod+K { focus-window-up; }
+    Mod+L { focus-column-right; }
+    Mod+Shift+H { move-column-left; }
+    Mod+Shift+J { move-window-down; }
+    Mod+Shift+K { move-window-up; }
+    Mod+Shift+L { move-column-right; }
+
+    Mod+1 { focus-workspace 1; }
+    Mod+2 { focus-workspace 2; }
+    Mod+3 { focus-workspace 3; }
+    Mod+4 { focus-workspace 4; }
+    Mod+5 { focus-workspace 5; }
+    Mod+6 { focus-workspace 6; }
+    Mod+7 { focus-workspace 7; }
+    Mod+8 { focus-workspace 8; }
+    Mod+9 { focus-workspace 9; }
+
+    Mod+Shift+1 { move-window-to-workspace 1 focus=false; }
+    Mod+Shift+2 { move-window-to-workspace 2 focus=false; }
+    Mod+Shift+3 { move-window-to-workspace 3 focus=false; }
+    Mod+Shift+4 { move-window-to-workspace 4 focus=false; }
+    Mod+Shift+5 { move-window-to-workspace 5 focus=false; }
+    Mod+Shift+6 { move-window-to-workspace 6 focus=false; }
+    Mod+Shift+7 { move-window-to-workspace 7 focus=false; }
+    Mod+Shift+8 { move-window-to-workspace 8 focus=false; }
+    Mod+Shift+9 { move-window-to-workspace 9 focus=false; }
+
+    Print { spawn-sh r#"@SHOT@"#; }
+}

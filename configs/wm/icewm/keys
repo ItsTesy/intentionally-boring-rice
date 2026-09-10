@@ -1,0 +1,40 @@
+key "Super+Return"       @TERM@
+key "Super+d"            @MENU@
+# no shell here
+key "Print"              /bin/sh -c "@SHOT@"
+
+key "Super+Shift+q"      icesh -f close
+key "Super+f"            icesh -f netState ^FULLSCREEN
+key "Super+Shift+space"  icesh -f netState ^ABOVE
+key "Super+Shift+c"      icesh restart
+key "Super+Shift+e"      icesh logout
+
+key "Super+h"            icesh goto prev
+key "Super+j"            icesh -s stacking -l activate
+key "Super+k"            icesh -f lower -s stacking reverse -l activate
+key "Super+l"            icesh goto next
+
+key "Super+Shift+h"      icesh -f sizeto 50% 100% left
+key "Super+Shift+j"      icesh -f sizeto 100% 50% bottom
+key "Super+Shift+k"      icesh -f sizeto 100% 50% top
+key "Super+Shift+l"      icesh -f sizeto 50% 100% right
+
+key "Super+1"            icesh goto 1
+key "Super+2"            icesh goto 2
+key "Super+3"            icesh goto 3
+key "Super+4"            icesh goto 4
+key "Super+5"            icesh goto 5
+key "Super+6"            icesh goto 6
+key "Super+7"            icesh goto 7
+key "Super+8"            icesh goto 8
+key "Super+9"            icesh goto 9
+
+key "Super+Shift+1"      icesh -f setWorkspace 1
+key "Super+Shift+2"      icesh -f setWorkspace 2
+key "Super+Shift+3"      icesh -f setWorkspace 3
+key "Super+Shift+4"      icesh -f setWorkspace 4
+key "Super+Shift+5"      icesh -f setWorkspace 5
+key "Super+Shift+6"      icesh -f setWorkspace 6
+key "Super+Shift+7"      icesh -f setWorkspace 7
+key "Super+Shift+8"      icesh -f setWorkspace 8
+key "Super+Shift+9"      icesh -f setWorkspace 9

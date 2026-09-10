@@ -1,0 +1,61 @@
+set $mod Mod4
+set $term @TERM@
+set $menu @MENU@
+
+font pango:JetBrainsMono Nerd Font 10
+
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders smart
+gaps inner 0
+gaps outer 0
+focus_follows_mouse no
+
+#                       border  bg      text    indicator child
+client.focused          #4a4a4a #101010 #b8b8b8 #4a4a4a   #4a4a4a
+client.focused_inactive #2a2a2a #101010 #6a6a6a #2a2a2a   #2a2a2a
+client.unfocused        #2a2a2a #101010 #6a6a6a #2a2a2a   #2a2a2a
+client.urgent           #a04040 #101010 #b8b8b8 #a04040   #a04040
+
+output * bg #000000 solid_color
+seat * hide_cursor 8000
+
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+q kill
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+e exec swaymsg exit
+
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+
+bindsym Print exec @SHOT@
+
+exec ~/.config/ibr/autostart

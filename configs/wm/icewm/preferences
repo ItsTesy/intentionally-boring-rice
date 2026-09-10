@@ -1,0 +1,21 @@
+Look="flat"
+ShowTaskBar=0
+TitleBarHeight=0
+BorderSizeX=1
+BorderSizeY=1
+DlgBorderSizeX=1
+DlgBorderSizeY=1
+
+ShowMenuButtonIcon=0
+ShowMoveSizeStatus=0
+ShowWorkspaceStatus=0
+FocusRequestFlashTime=0
+QuickSwitch=0
+ConfirmLogout=0
+
+ShowThemesMenu=0
+
+WorkspaceNames="1", "2", "3", "4", "5", "6", "7", "8", "9"
+
+DesktopBackgroundColor="#000000"
+SupportSemitransparency=0
