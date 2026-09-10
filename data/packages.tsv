@@ -1,0 +1,787 @@
+apk	alacritty	alacritty
+apk	awesome	awesome
+apk	bemenu	bemenu
+apk	bspwm	bspwm
+apk	cc-toolchain	build-base pkgconf
+apk-chimera	alacritty	
+apk-chimera	awesome	
+apk-chimera	bemenu	bemenu
+apk-chimera	bspwm	
+apk-chimera	dmenu	
+apk-chimera	dunst	
+apk-chimera	dwl	
+apk-chimera	dwm	
+apk-chimera	fastfetch	fastfetch
+apk-chimera	foot	foot
+apk-chimera	fuzzel	
+apk-chimera	grim	grim
+apk-chimera	hyprland	
+apk-chimera	i3	
+apk-chimera	i3lock	
+apk-chimera	icewm	
+apk-chimera	kitty	
+apk-chimera	maim	
+apk-chimera	mako	mako
+apk-chimera	mangowm	
+apk-chimera	niri	
+apk-chimera	openbox	
+apk-chimera	polybar	
+apk-chimera	pulseaudio-utils	libpulse-progs
+apk-chimera	qtile	
+apk-chimera	river	
+apk-chimera	rofi	
+apk-chimera	rofi-wayland	
+apk-chimera	slurp	slurp
+apk-chimera	st	
+apk-chimera	swaybg	swaybg
+apk-chimera	swayfx	
+apk-chimera	swayidle	swayidle
+apk-chimera	swaylock	swaylock
+apk-chimera	swaync	
+apk-chimera	sway	sway
+apk-chimera	tint2	
+apk-chimera	tofi	
+apk-chimera	uwsm	
+apk-chimera	waybar	
+apk-chimera	wayfire	wayfire
+apk-chimera	wireplumber	wireplumber
+apk-chimera	wl-clipboard	wl-clipboard
+apk-chimera	wofi	wofi
+apk-chimera	xclip	xclip
+apk-chimera	xmonad	
+apk-chimera	xorg-xrandr	xrandr
+apk-chimera	xsetroot	xsetroot
+apk-chimera	xterm	
+apk-chimera	yambar	yambar
+apk	dmenu	dmenu
+apk	dunst	dunst
+apk	dwl	
+apk	dwm	dwm
+apk	fastfetch	fastfetch
+apk	fontconfig	fontconfig-dev
+apk	foot	foot
+apk	fuzzel	fuzzel
+apk	grim	grim
+apk	hyprland	hyprland
+apk	i3	i3wm
+apk	i3lock	i3lock
+apk	icewm	icewm
+apk	idle	xautolock
+apk	kitty	kitty
+apk	libinput	libinput-dev
+apk	maim	maim
+apk	mako	mako
+apk	mangowm	mangowm
+apk	niri	niri
+apk	openbox	openbox
+apk	pixman	pixman-dev
+apk	polybar	polybar
+apk	pulseaudio-utils	pulseaudio-utils
+apk	python	python3
+apk	qtile	
+apk	river	river
+apk	rofi	rofi
+apk	rofi-wayland	rofi-wayland
+apk	slurp	slurp
+apk	st	st
+apk	swaybg	swaybg
+apk	swayfx	
+apk	swayidle	swayidle
+apk	swaylock	swaylock
+apk	swaync	swaync
+apk	sway	sway
+apk	tint2	tint2
+apk	tofi	tofi
+apk	uwsm	
+apk	waybar	waybar
+apk	wayfire	
+apk	wayland-protocols	wayland-protocols
+apk	wayland	wayland-dev
+apk	wireplumber	wireplumber
+apk	wl-clipboard	wl-clipboard
+apk	wlroots	wlroots0.20-dev
+apk	wofi	wofi
+apk	xclip	xclip
+apk	xft	libxft-dev
+apk	xinerama	libxinerama-dev
+apk	xlib	libx11-dev
+apk	xmonad	
+apk	xorg-xrandr	xrandr
+apk	xsetroot	xsetroot
+apk	xterm	xterm
+apk	yambar	yambar
+apt	alacritty	alacritty
+apt	awesome	awesome
+apt	bemenu	bemenu
+apt	bspwm	bspwm
+apt	cc-toolchain	build-essential pkg-config
+apt	dmenu	suckless-tools
+apt	dunst	dunst
+apt	dwl	
+apt	dwm	dwm
+apt	fastfetch	fastfetch
+apt	fontconfig	libfontconfig-dev
+apt	foot	foot
+apt	fuzzel	fuzzel
+apt	grim	grim
+apt	hyprland	
+apt	i3	i3
+apt	i3lock	i3lock
+apt	icewm	icewm
+apt	idle	xautolock
+apt	kitty	kitty
+apt	libinput	libinput-dev
+apt	maim	maim
+apt	mako	mako-notifier
+apt	mangowm	
+apt	niri	
+apt	openbox	openbox
+apt	pixman	libpixman-1-dev
+apt	polybar	polybar
+apt	pulseaudio-utils	pulseaudio-utils
+apt	python	python3
+apt	qtile	qtile
+apt	river	
+apt	rofi	rofi
+apt	rofi-wayland	
+apt	slurp	slurp
+apt	st	stterm
+apt	swaybg	swaybg
+apt	swayfx	
+apt	swayidle	swayidle
+apt	swaylock	swaylock
+apt	swaync	sway-notification-center
+apt	sway	sway
+apt	tint2	tint2
+apt	tofi	tofi
+apt	uwsm	
+apt	waybar	waybar
+apt	wayfire	wayfire
+apt	wayland	libwayland-dev libwayland-bin
+apt	wayland-protocols	wayland-protocols
+apt	wireplumber	wireplumber
+apt	wl-clipboard	wl-clipboard
+apt	wlroots	libwlroots-0.18-dev
+apt	wofi	wofi
+apt	xclip	xclip
+apt	xft	libxft-dev
+apt	xinerama	libxinerama-dev
+apt	xlib	libx11-dev
+apt	xmonad	xmonad
+apt	xorg-xrandr	x11-xserver-utils
+apt	xsetroot	x11-xserver-utils
+apt	xterm	xterm
+apt	yambar	yambar
+crux	alacritty	
+crux	dmenu	
+crux	dunst	
+crux	fastfetch	
+crux	foot	
+crux	grim	
+crux	i3	opt/i3
+crux	mako	
+crux	openbox	opt/openbox
+crux	pulseaudio-utils	opt/pulseaudio
+crux	slurp	
+crux	sway	
+crux	swaybg	
+crux	swayidle	
+crux	swaylock	
+crux	tint2	
+crux	tofi	
+crux	wireplumber	
+crux	wl-clipboard	
+crux	wofi	
+crux	xclip	
+crux	xorg-xrandr	xorg/xorg-xrandr
+crux	xsetroot	xorg/xorg-xsetroot
+crux	xterm	opt/xterm
+dnf	alacritty	alacritty
+dnf	awesome	awesome
+dnf	bemenu	bemenu
+dnf	bspwm	bspwm
+dnf	cc-toolchain	gcc make pkgconf-pkg-config
+dnf	dmenu	dmenu
+dnf	dunst	dunst
+dnf	dwl	
+dnf	dwm	
+dnf	fastfetch	fastfetch
+dnf	fontconfig	fontconfig-devel
+dnf	foot	foot
+dnf	fuzzel	fuzzel
+dnf	grim	grim
+dnf	hyprland	
+dnf	i3	i3
+dnf	i3lock	i3lock
+dnf	icewm	icewm
+dnf	idle	xautolock
+dnf	kitty	kitty
+dnf	libinput	libinput-devel
+dnf	maim	maim
+dnf	mako	mako
+dnf	mangowm	
+dnf	niri	niri
+dnf	openbox	openbox
+dnf	pixman	pixman-devel
+dnf	polybar	polybar
+dnf	pulseaudio-utils	pulseaudio-utils
+dnf	python	python3
+dnf	qtile	qtile
+dnf	river	river
+dnf	rofi	rofi
+dnf	rofi-wayland	
+dnf	slurp	slurp
+dnf	st	st
+dnf	swaybg	swaybg
+dnf	swayfx	
+dnf	swayidle	swayidle
+dnf	swaylock	swaylock
+dnf	swaync	SwayNotificationCenter
+dnf	sway	sway
+dnf	tint2	
+dnf	tofi	
+dnf	uwsm	
+dnf	waybar	waybar
+dnf	wayfire	wayfire
+dnf	wayland-protocols	wayland-protocols-devel
+dnf	wayland	wayland-devel
+dnf	wireplumber	wireplumber
+dnf	wl-clipboard	wl-clipboard
+dnf	wlroots	wlroots-devel
+dnf	wofi	wofi
+dnf	xclip	xclip
+dnf	xft	libXft-devel
+dnf	xinerama	libXinerama-devel
+dnf	xlib	libX11-devel
+dnf	xmonad	xmonad-core
+dnf	xorg-xrandr	xrandr
+dnf	xsetroot	xsetroot
+dnf	xterm	xterm
+dnf	yambar	yambar
+guix	alacritty	alacritty
+guix	awesome	awesome
+guix	bemenu	bemenu
+guix	bspwm	bspwm
+guix	dmenu	dmenu
+guix	dunst	dunst
+guix	dwl	dwl
+guix	dwm	dwm
+guix	fastfetch	fastfetch
+guix	foot	foot
+guix	fuzzel	fuzzel
+guix	grim	grim
+guix	hyprland	hyprland
+guix	i3	i3-wm
+guix	i3lock	i3lock
+guix	icewm	icewm
+guix	kitty	kitty
+guix	maim	maim
+guix	mako	mako
+guix	mangowm	mangowm
+guix	niri	niri
+guix	openbox	openbox
+guix	polybar	polybar
+guix	pulseaudio-utils	pulseaudio
+guix	python	python
+guix	qtile	qtile
+guix	river	river
+guix	rofi	rofi
+guix	rofi-wayland	
+guix	slurp	slurp
+guix	st	st
+guix	swaybg	swaybg
+guix	swayfx	swayfx
+guix	swayidle	swayidle
+guix	swaylock	swaylock
+guix	swaync	swaynotificationcenter
+guix	sway	sway
+guix	tint2	tint2
+guix	tofi	tofi
+guix	uwsm	
+guix	waybar	waybar
+guix	wayfire	wayfire
+guix	wireplumber	wireplumber
+guix	wl-clipboard	wl-clipboard
+guix	wofi	wofi
+guix	xclip	xclip
+guix	xmonad	xmonad
+guix	xorg-xrandr	xrandr
+guix	xsetroot	xsetroot
+guix	xterm	xterm
+guix	yambar	yambar-wayland
+kiss	bemenu	
+kiss	foot	wayland/foot
+kiss	grim	wayland/grim
+kiss	slurp	wayland/slurp
+kiss	swaybg	
+kiss	swayfx	
+kiss	swayidle	
+kiss	swaylock	
+kiss	sway	wayland/sway
+kiss	wl-clipboard	
+netbsd	alacritty	alacritty
+netbsd	awesome	awesome
+netbsd	bemenu	
+netbsd	bspwm	bspwm
+netbsd	dmenu	dmenu
+netbsd	dunst	dunst
+netbsd	dwl	
+netbsd	dwm	dwm
+netbsd	fastfetch	fastfetch
+netbsd	foot	foot
+netbsd	fuzzel	
+netbsd	grim	grim
+netbsd	hyprland	
+netbsd	i3	i3
+netbsd	i3lock	i3lock
+netbsd	icewm	icewm
+netbsd	kitty	kitty
+netbsd	maim	maim
+netbsd	mako	
+netbsd	mangowm	
+netbsd	niri	
+netbsd	openbox	openbox
+netbsd	polybar	
+netbsd	pulseaudio-utils	pulseaudio
+netbsd	python	python312
+netbsd	qtile	
+netbsd	river	
+netbsd	rofi	rofi
+netbsd	rofi-wayland	
+netbsd	slurp	slurp
+netbsd	st	st-term
+netbsd	swaybg	swaybg
+netbsd	swayfx	
+netbsd	swayidle	swayidle
+netbsd	swaylock	swaylock
+netbsd	swaync	
+netbsd	sway	sway
+netbsd	tint2	tint2
+netbsd	tofi	
+netbsd	uwsm	
+netbsd	waybar	
+netbsd	wayfire	
+netbsd	wireplumber	
+netbsd	wl-clipboard	wl-clipboard
+netbsd	wofi	
+netbsd	xclip	xclip
+netbsd	xmonad	xmonad
+netbsd	xorg-xrandr	xrandr
+netbsd	xsetroot	xsetroot
+netbsd	xterm	xterm
+netbsd	yambar	
+nix	alacritty	alacritty
+nix	awesome	awesome
+nix	bemenu	bemenu
+nix	bspwm	bspwm
+nix	dmenu	dmenu
+nix	dunst	dunst
+nix	dwl	dwl
+nix	dwm	dwm
+nix	fastfetch	fastfetch
+nix	foot	foot
+nix	fuzzel	fuzzel
+nix	grim	grim
+nix	hyprland	hyprland
+nix	i3	i3
+nix	i3lock	i3lock
+nix	icewm	icewm
+nix	kitty	kitty
+nix	maim	maim
+nix	mako	mako
+nix	mangowm	mango
+nix	niri	niri
+nix	openbox	openbox
+nix	polybar	polybar
+nix	pulseaudio-utils	pulseaudio
+nix	python	python3
+nix	qtile	python313Packages.qtile
+nix	river	river
+nix	rofi	rofi
+nix	rofi-wayland	
+nix	slurp	slurp
+nix	st	st
+nix	swaybg	swaybg
+nix	swayfx	swayfx
+nix	swayidle	swayidle
+nix	swaylock	swaylock
+nix	swaync	swaynotificationcenter
+nix	sway	sway
+nix	tint2	tint2
+nix	tofi	tofi
+nix	uwsm	uwsm
+nix	waybar	waybar
+nix	wayfire	wayfire
+nix	wireplumber	wireplumber
+nix	wl-clipboard	wl-clipboard
+nix	wofi	wofi
+nix	xclip	xclip
+nix	xmonad	xmonad-with-packages
+nix	xorg-xrandr	xrandr
+nix	xsetroot	xsetroot
+nix	xterm	xterm
+nix	yambar	yambar
+openbsd	alacritty	alacritty
+openbsd	awesome	awesome
+openbsd	bemenu	bemenu
+openbsd	bspwm	bspwm
+openbsd	dmenu	dmenu
+openbsd	dunst	dunst
+openbsd	dwl	
+openbsd	dwm	dwm
+openbsd	fastfetch	fastfetch
+openbsd	foot	foot
+openbsd	fuzzel	fuzzel
+openbsd	grim	grim
+openbsd	hyprland	
+openbsd	i3	i3
+openbsd	i3lock	i3lock
+openbsd	icewm	icewm
+openbsd	idle	xidle
+openbsd	kitty	kitty
+openbsd	maim	maim
+openbsd	mako	
+openbsd	mangowm	mango
+openbsd	niri	niri
+openbsd	openbox	openbox
+openbsd	polybar	polybar
+openbsd	pulseaudio-utils	pulseaudio
+openbsd	python	python3
+openbsd	qtile	
+openbsd	river	
+openbsd	rofi	rofi
+openbsd	rofi-wayland	
+openbsd	slurp	slurp
+openbsd	st	st
+openbsd	swaybg	swaybg
+openbsd	swayfx	
+openbsd	swayidle	swayidle
+openbsd	swaylock	swaylock
+openbsd	swaync	
+openbsd	sway	sway
+openbsd	tint2	tint2
+openbsd	tofi	
+openbsd	uwsm	
+openbsd	waybar	waybar
+openbsd	wayfire	wayfire
+openbsd	wireplumber	wireplumber
+openbsd	wl-clipboard	wl-clipboard
+openbsd	wofi	wofi
+openbsd	xclip	xclip
+openbsd	xmonad	xmonad
+openbsd	xorg-xrandr	
+openbsd	xsetroot	
+openbsd	xterm	
+openbsd	yambar	
+pacman	alacritty	alacritty
+pacman	awesome	awesome
+pacman	bemenu	bemenu
+pacman	bspwm	bspwm
+pacman	cc-toolchain	base-devel
+pacman	dmenu	dmenu
+pacman	dunst	dunst
+pacman	dwl	
+pacman	dwm	
+pacman	fastfetch	fastfetch
+pacman	fontconfig	fontconfig
+pacman	foot	foot
+pacman	fuzzel	fuzzel
+pacman	grim	grim
+pacman	hyprland	hyprland
+pacman	i3	i3-wm
+pacman	i3lock	i3lock
+pacman	icewm	icewm
+pacman	idle	xss-lock
+pacman	kitty	kitty
+pacman	libinput	libinput
+pacman	maim	maim
+pacman	mako	mako
+pacman	mangowm	
+pacman	meson	meson ninja
+pacman	niri	niri
+pacman	openbox	openbox
+pacman	pixman	pixman
+pacman	polybar	polybar
+pacman	pulseaudio-utils	libpulse
+pacman	python	python
+pacman	qtile	qtile
+pacman	river	river
+pacman	rofi	rofi
+pacman	rofi-wayland	rofi
+pacman	scenefx	
+pacman	slurp	slurp
+pacman	st	
+pacman	swaybg	swaybg
+pacman	swayfx	
+pacman	swayidle	swayidle
+pacman	swaylock	swaylock
+pacman	swaync	swaync
+pacman	sway	sway
+pacman	tint2	tint2
+pacman	tofi	
+pacman	uwsm	uwsm
+pacman	waybar	waybar
+pacman	wayfire	wayfire
+pacman	wayland-protocols	wayland-protocols
+pacman	wayland	wayland
+pacman	wireplumber	wireplumber
+pacman	wl-clipboard	wl-clipboard
+pacman	wlroots	wlroots0.20
+pacman	wofi	wofi
+pacman	xclip	xclip
+pacman	xft	libxft
+pacman	xinerama	libxinerama
+pacman	xlib	libx11
+pacman	xmonad	xmonad
+pacman	xorg-xrandr	xorg-xrandr
+pacman	xsetroot	xorg-xsetroot
+pacman	xterm	xterm
+pacman	yambar	
+pkg	alacritty	alacritty
+pkg	awesome	awesome
+pkg	bemenu	bemenu
+pkg	bspwm	bspwm
+pkg	cc-toolchain	pkgconf gmake
+pkg	dmenu	dmenu
+pkg	dunst	dunst
+pkg	dwl	dwl
+pkg	dwm	dwm
+pkg	fastfetch	fastfetch
+pkg	fontconfig	fontconfig
+pkg	foot	foot
+pkg	fuzzel	fuzzel
+pkg	grim	grim
+pkg	hyprland	hyprland
+pkg	i3	i3
+pkg	i3lock	i3lock
+pkg	icewm	icewm
+pkg	idle	xautolock
+pkg	kitty	kitty
+pkg	libinput	libinput
+pkg	maim	maim
+pkg	mako	mako
+pkg	mangowm	mango
+pkg	niri	niri
+pkg	openbox	openbox
+pkg	pixman	pixman
+pkg	polybar	polybar
+pkg	pulseaudio-utils	pulseaudio
+pkg	python	python3
+pkg	qtile	py312-qtile
+pkg	river	river
+pkg	rofi	rofi
+pkg	rofi-wayland	rofi
+pkg	slurp	slurp
+pkg	st	sterm
+pkg	swaybg	swaybg
+pkg	swayfx	swayfx
+pkg	swayidle	swayidle
+pkg	swaylock	swaylock
+pkg	swaync	swaync
+pkg	sway	sway
+pkg	tint2	tint2
+pkg	tofi	tofi
+pkg	uwsm	
+pkg	waybar	waybar
+pkg	wayfire	wayfire
+pkg	wayland-protocols	wayland-protocols
+pkg	wayland	wayland
+pkg	wireplumber	wireplumber
+pkg	wl-clipboard	wl-clipboard
+pkg	wlroots	wlroots019
+pkg	wofi	wofi
+pkg	xclip	xclip
+pkg	xft	libXft
+pkg	xinerama	libXinerama
+pkg	xlib	libX11
+pkg	xmonad	hs-xmonad
+pkg	xorg-xrandr	xrandr
+pkg	xsetroot	xsetroot
+pkg	xterm	xterm
+pkg	yambar	
+portage	alacritty	x11-terms/alacritty
+portage	awesome	x11-wm/awesome
+portage	bemenu	dev-libs/bemenu
+portage	bspwm	x11-wm/bspwm
+portage	cc-toolchain	sys-devel/gcc dev-build/make virtual/pkgconfig
+portage	dmenu	x11-misc/dmenu
+portage	dunst	x11-misc/dunst
+portage	dwl	gui-wm/dwl
+portage	dwm	x11-wm/dwm
+portage	fastfetch	app-misc/fastfetch
+portage	fontconfig	media-libs/fontconfig
+portage	foot	gui-apps/foot
+portage	fuzzel	
+portage	grim	gui-apps/grim
+portage	hyprland	
+portage	i3lock	x11-misc/i3lock
+portage	i3	x11-wm/i3
+portage	icewm	x11-wm/icewm
+portage	idle	x11-misc/xautolock
+portage	kitty	x11-terms/kitty
+portage	libinput	dev-libs/libinput
+portage	maim	media-gfx/maim
+portage	mako	gui-apps/mako
+portage	mangowm	
+portage	niri	
+portage	openbox	x11-wm/openbox
+portage	pixman	x11-libs/pixman
+portage	polybar	x11-misc/polybar
+portage	pulseaudio-utils	media-libs/libpulse
+portage	python	dev-lang/python
+portage	qtile	x11-wm/qtile
+portage	river	
+portage	rofi-wayland	x11-misc/rofi
+portage	rofi	x11-misc/rofi
+portage	slurp	gui-apps/slurp
+portage	st	x11-terms/st
+portage	swaybg	gui-apps/swaybg
+portage	swayfx	
+portage	sway	gui-wm/sway
+portage	swayidle	gui-apps/swayidle
+portage	swaylock	gui-apps/swaylock
+portage	swaync	
+portage	tint2	x11-misc/tint2
+portage	tofi	
+portage	uwsm	gui-apps/uwsm
+portage	waybar	gui-apps/waybar
+portage	wayfire	gui-wm/wayfire
+portage	wayland	dev-libs/wayland dev-util/wayland-scanner
+portage	wayland-protocols	dev-libs/wayland-protocols
+portage	wireplumber	media-video/wireplumber
+portage	wl-clipboard	gui-apps/wl-clipboard
+portage	wlroots	gui-libs/wlroots:0.19
+portage	wofi	gui-apps/wofi
+portage	xclip	x11-misc/xclip
+portage	xft	x11-libs/libXft
+portage	xinerama	x11-libs/libXinerama
+portage	xlib	x11-libs/libX11
+portage	xmonad	x11-wm/xmonad
+portage	xorg-xrandr	x11-apps/xrandr
+portage	xsetroot	x11-apps/xsetroot
+portage	xterm	x11-terms/xterm
+portage	yambar	
+xbps	alacritty	alacritty
+xbps	awesome	awesome
+xbps	bemenu	bemenu
+xbps	bspwm	bspwm
+xbps	cc-toolchain	base-devel
+xbps	dmenu	dmenu
+xbps	dunst	dunst
+xbps	dwl	
+xbps	dwm	dwm
+xbps	fastfetch	fastfetch
+xbps	fontconfig	fontconfig-devel
+xbps	foot	foot
+xbps	fuzzel	fuzzel
+xbps	grim	grim
+xbps	hyprland	
+xbps	i3	i3
+xbps	i3lock	i3lock
+xbps	icewm	icewm
+xbps	idle	xautolock
+xbps	kitty	kitty
+xbps	libinput	libinput-devel
+xbps	maim	maim
+xbps	mako	mako
+xbps	mangowm	mangowc
+xbps	niri	niri
+xbps	openbox	openbox
+xbps	pixman	pixman-devel
+xbps	polybar	polybar
+xbps	pulseaudio-utils	pulseaudio-utils
+xbps	python	python3
+xbps	qtile	qtile
+xbps	river	river
+xbps	rofi	rofi
+xbps	rofi-wayland	
+xbps	slurp	slurp
+xbps	st	st
+xbps	swaybg	swaybg
+xbps	swayfx	swayfx
+xbps	swayidle	swayidle
+xbps	swaylock	swaylock
+xbps	swaync	SwayNotificationCenter
+xbps	sway	sway
+xbps	tint2	tint2
+xbps	tofi	tofi
+xbps	uwsm	
+xbps	waybar	Waybar
+xbps	wayfire	wayfire
+xbps	wayland-protocols	wayland-protocols
+xbps	wayland	wayland-devel
+xbps	wireplumber	wireplumber
+xbps	wl-clipboard	wl-clipboard
+xbps	wlroots	wlroots0.19-devel
+xbps	wofi	wofi
+xbps	xclip	xclip
+xbps	xft	libXft-devel
+xbps	xinerama	libXinerama-devel
+xbps	xlib	libX11-devel
+xbps	xmonad	
+xbps	xorg-xrandr	xrandr
+xbps	xsetroot	xsetroot
+xbps	xterm	xterm
+xbps	yambar	yambar
+zypper	alacritty	alacritty
+zypper	awesome	awesome
+zypper	bemenu	bemenu
+zypper	bspwm	bspwm
+zypper	cc-toolchain	gcc make pkgconf-pkg-config
+zypper	dmenu	dmenu
+zypper	dunst	dunst
+zypper	dwl	
+zypper	dwm	
+zypper	fastfetch	fastfetch
+zypper	fontconfig	fontconfig-devel
+zypper	foot	foot
+zypper	fuzzel	fuzzel
+zypper	grim	grim
+zypper	hyprland	hyprland
+zypper	i3	i3
+zypper	i3lock	i3lock
+zypper	icewm	icewm
+zypper	idle	xautolock
+zypper	kitty	kitty
+zypper	libinput	libinput-devel
+zypper	maim	maim
+zypper	mako	mako
+zypper	mangowm	
+zypper	niri	niri
+zypper	openbox	openbox
+zypper	pixman	libpixman-1-0-devel
+zypper	polybar	polybar
+zypper	pulseaudio-utils	pulseaudio-utils
+zypper	python	python3
+zypper	qtile	
+zypper	river	river
+zypper	rofi	rofi
+zypper	rofi-wayland	rofi-wayland
+zypper	slurp	slurp
+zypper	st	st
+zypper	swaybg	swaybg
+zypper	swayfx	
+zypper	swayidle	swayidle
+zypper	swaylock	swaylock
+zypper	swaync	SwayNotificationCenter
+zypper	sway	sway
+zypper	tint2	
+zypper	tofi	tofi
+zypper	uwsm	uwsm
+zypper	waybar	waybar
+zypper	wayfire	wayfire
+zypper	wayland-protocols	wayland-protocols-devel
+zypper	wayland	wayland-devel
+zypper	wireplumber	wireplumber
+zypper	wl-clipboard	wl-clipboard
+zypper	wlroots	wlroots-0_19-devel
+zypper	wofi	wofi
+zypper	xclip	xclip
+zypper	xft	libXft-devel
+zypper	xinerama	libXinerama-devel
+zypper	xlib	libX11-devel
+zypper	xmonad	xmonad
+zypper	xorg-xrandr	xrandr
+zypper	xsetroot	xsetroot
+zypper	xterm	xterm
+zypper	yambar	yambar
