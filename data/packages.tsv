@@ -128,7 +128,7 @@ apt	hyprland
 apt	i3	i3
 apt	i3lock	i3lock
 apt	icewm	icewm
-apt	idle	xautolock
+apt	idle	xss-lock
 apt	kitty	kitty
 apt	libinput	libinput-dev
 apt	maim	maim
