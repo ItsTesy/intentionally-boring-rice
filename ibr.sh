@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # intentionally boring rice
-#   bash <(curl -s https://raw.githubusercontent.com/ItsTesy/ibr/main/ibr.sh)
+#   bash <(curl -s https://raw.githubusercontent.com/ItsTesy/intentionally-boring-rice/main/ibr.sh)
 set -uo pipefail
 
-REPO=${IBR_REPO:-https://github.com/ItsTesy/ibr}
+REPO=${IBR_REPO:-https://github.com/ItsTesy/intentionally-boring-rice}
 BRANCH=${IBR_BRANCH:-main}
 SRC=${IBR_SRC:-}
 YES=0 DRY=0 PICKED=0 RESTORE=''

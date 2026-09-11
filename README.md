@@ -4,7 +4,7 @@ a desktop built so that nothing on it ever asks for
 your attention.
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/ItsTesy/ibr/main/ibr.sh)
+bash <(curl -s https://raw.githubusercontent.com/ItsTesy/intentionally-boring-rice/main/ibr.sh)
 ```
 
 ![sway, waybar, foot, dunst](doc/sway.png)
