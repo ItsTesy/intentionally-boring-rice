@@ -1,0 +1,9 @@
+- river:
+    content:
+      title: {empty: {}}
+      tag:
+        map:
+          default: {string: {text: "{id}", foreground: 6a6a6aff}}
+          conditions:
+            state == focused: {string: {text: "{id}", foreground: b8b8b8ff}}
+            state == urgent: {string: {text: "{id}", foreground: a04040ff}}

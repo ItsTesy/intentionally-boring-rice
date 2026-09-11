@@ -1,0 +1,13 @@
+bar:
+  height: 22
+  location: top
+  # rrggbbaa not rrggbb
+  background: 101010ff
+  foreground: b8b8b8ff
+  font: JetBrainsMono Nerd Font:size=10
+  spacing: 6
+  margin: 8
+
+  left: []
+  center: []
+  right: []

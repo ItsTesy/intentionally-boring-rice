@@ -1,0 +1,56 @@
+{
+	"layer": "top",
+	"position": "top",
+	"height": 22,
+	"spacing": 0,
+	"modules-left": [
+		"sway/workspaces"
+	],
+	"modules-center": [],
+	"modules-right": [
+		"clock"
+	],
+	"sway/workspaces": {
+		"format": "{name}",
+		"disable-scroll": true
+	},
+	"hyprland/workspaces": {
+		"format": "{name}"
+	},
+	"niri/workspaces": {
+		"format": "{value}"
+	},
+	"wayfire/workspaces": {
+		"format": "{index}",
+		"disable-scroll": true
+	},
+	"ext/workspaces": {
+		"format": "{name}"
+	},
+	"river/tags": {
+		"num-tags": 9
+	},
+	"dwl/tags": {
+		"num-tags": 9
+	},
+	"pulseaudio": {
+		"format": "{volume}%",
+		"format-muted": "muted",
+		"tooltip": false
+	},
+	"battery": {
+		"format": "{capacity}%",
+		"states": {
+			"critical": 15
+		},
+		"tooltip": false
+	},
+	"clock": {
+		"format": "{:%H:%M}",
+		"tooltip": false
+	},
+	"clock#date": {
+		"format": "{:%Y-%m-%d}",
+		"tooltip": false
+	}
+}

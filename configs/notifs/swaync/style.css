@@ -1,0 +1,100 @@
+* {
+	font-family: "JetBrainsMono Nerd Font";
+	font-size: 10pt;
+	border-radius: 0;
+	box-shadow: none;
+	text-shadow: none;
+	outline: none;
+	min-height: 0;
+	min-width: 0;
+	transition: none;
+	animation: none;
+}
+
+.blank-window {
+	background: transparent;
+}
+
+.floating-notifications.background {
+	background: transparent;
+}
+
+.notification-row .notification-background .notification {
+	background: #101010;
+	border: 1px solid #2a2a2a;
+	margin: 4px 8px;
+	padding: 0;
+}
+
+.notification-row .notification-background .notification.critical {
+	border: 1px solid #a04040;
+}
+
+.notification-row .notification-background .notification .notification-default-action,
+.notification-row .notification-background .notification .notification-default-action:hover,
+.notification-row .notification-background .notification .notification-action > button,
+.notification-row .notification-background .notification .notification-action > button:hover {
+	background: #101010;
+	border: none;
+	color: #b8b8b8;
+	padding: 0;
+	margin: 0;
+}
+
+.notification-row .notification-background .notification .notification-action > button {
+	border-top: 1px solid #2a2a2a;
+	padding: 4px 10px;
+}
+
+.notification-content {
+	padding: 8px 10px;
+	color: #b8b8b8;
+}
+
+.text-box .summary {
+	color: #b8b8b8;
+	font-weight: normal;
+}
+
+.text-box .body,
+.text-box .time {
+	color: #6a6a6a;
+}
+
+.notification.critical .text-box .summary {
+	color: #a04040;
+}
+
+.close-button,
+.close-button:hover {
+	background: transparent;
+	border: none;
+	color: #6a6a6a;
+	padding: 0 6px;
+	margin: 0;
+}
+
+.control-center {
+	background: #101010;
+	border: 1px solid #2a2a2a;
+	padding: 0;
+}
+
+.control-center .control-center-list {
+	background: transparent;
+}
+
+.control-center .control-center-list-placeholder {
+	color: #6a6a6a;
+}
+
+scrollbar {
+	background: #101010;
+	border: none;
+}
+
+scrollbar slider {
+	background: #2a2a2a;
+	border: none;
+	min-width: 4px;
+}

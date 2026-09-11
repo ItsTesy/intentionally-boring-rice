@@ -1,0 +1,68 @@
+configuration {
+	modes: "drun";
+	show-icons: false;
+	drun-display-format: "{name}";
+	terminal: "@TERM@";
+}
+
+@theme "/dev/null"
+
+* {
+	font: "JetBrainsMono Nerd Font 10";
+	background-color: #101010;
+	text-color: #b8b8b8;
+}
+
+window {
+	width: 640px;
+	location: center;
+	anchor: center;
+	padding: 0;
+	border: 1px;
+	border-color: #2a2a2a;
+	border-radius: 0;
+}
+
+mainbox {
+	padding: 0;
+	spacing: 0;
+	children: [ inputbar, listview ];
+}
+
+inputbar {
+	padding: 4px 8px;
+	children: [ entry ];
+}
+
+entry {
+	blink: false;
+}
+
+listview {
+	lines: 8;
+	columns: 1;
+	fixed-height: true;
+	scrollbar: false;
+	padding: 0;
+	spacing: 0;
+}
+
+element {
+	padding: 2px 8px;
+	border: 0;
+	border-radius: 0;
+}
+
+element selected {
+	background-color: #4a4a4a;
+}
+
+element urgent {
+	text-color: #a04040;
+}
+
+element-text {
+	// else the row paints over it
+	background-color: inherit;
+	text-color: inherit;
+}

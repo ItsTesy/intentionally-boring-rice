@@ -1,0 +1,4 @@
+- clock:
+    date-format: "%Y-%m-%d"
+    content:
+      string: {text: "{date}", foreground: 6a6a6aff}

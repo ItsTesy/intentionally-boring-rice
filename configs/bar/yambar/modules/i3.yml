@@ -1,0 +1,9 @@
+- i3:
+    sort: ascending
+    content:
+      "":
+        map:
+          default: {string: {text: "{name}", foreground: 6a6a6aff}}
+          conditions:
+            focused: {string: {text: "{name}", foreground: b8b8b8ff}}
+            urgent: {string: {text: "{name}", foreground: a04040ff}}

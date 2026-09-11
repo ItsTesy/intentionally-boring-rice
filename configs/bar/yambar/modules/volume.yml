@@ -1,0 +1,8 @@
+- alsa:
+    card: default
+    mixer: Master
+    content:
+      map:
+        conditions:
+          muted: {string: {text: "mute", foreground: 6a6a6aff}}
+          ~muted: {string: {text: "{percent}%", foreground: b8b8b8ff}}

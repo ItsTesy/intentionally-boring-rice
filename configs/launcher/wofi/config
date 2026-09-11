@@ -1,0 +1,13 @@
+show=drun
+width=480
+lines=8
+insensitive=true
+allow_images=false
+use_search_box=false
+hide_scroll=true
+no_actions=true
+gtk_dark=true
+
+prompt=
+
+term=@TERM@

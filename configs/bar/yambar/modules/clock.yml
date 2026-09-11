@@ -1,0 +1,4 @@
+- clock:
+    time-format: "%H:%M"
+    content:
+      string: {text: "{time}", foreground: b8b8b8ff}

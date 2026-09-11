@@ -1,0 +1,31 @@
+XTerm*faceName: JetBrainsMono Nerd Font
+XTerm*faceSize: 10
+XTerm*termName: xterm-256color
+
+XTerm*background: #101010
+XTerm*foreground: #b8b8b8
+XTerm*cursorColor: #b8b8b8
+
+XTerm*color0:  #2a2a2a
+XTerm*color1:  #8a4a4a
+XTerm*color2:  #5a7a5a
+XTerm*color3:  #8a8a8a
+XTerm*color4:  #6a6a6a
+XTerm*color5:  #7a7a7a
+XTerm*color6:  #8a8a8a
+XTerm*color7:  #b8b8b8
+XTerm*color8:  #4a4a4a
+XTerm*color9:  #a04040
+XTerm*color10: #6f8f6f
+XTerm*color11: #a8a8a8
+XTerm*color12: #8a8a8a
+XTerm*color13: #9a9a9a
+XTerm*color14: #a8a8a8
+XTerm*color15: #f0f0f0
+
+XTerm*cursorBlink: false
+XTerm*scrollBar: false
+XTerm*saveLines: 10000
+XTerm*internalBorder: 10
+! alt sends escape instead of setting the high bit
+XTerm*metaSendsEscape: true

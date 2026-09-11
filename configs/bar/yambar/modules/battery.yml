@@ -1,0 +1,8 @@
+- battery:
+    name: BAT0
+    poll-interval: 30
+    content:
+      map:
+        default: {string: {text: "{capacity}%", foreground: b8b8b8ff}}
+        conditions:
+          capacity < 15: {string: {text: "{capacity}%", foreground: a04040ff}}
