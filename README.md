@@ -1,7 +1,6 @@
 # intentionally boring rice
 
-a desktop built so that nothing on it ever asks for
-your attention.
+a desktop built so that nothing on it ever asks for your attention.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/ItsTesy/intentionally-boring-rice/main/ibr.sh)
