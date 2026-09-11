@@ -1,6 +1,6 @@
-# ibr
+# intentionally boring rice
 
-intentionally boring rice. a desktop built so that nothing on it ever asks for
+a desktop built so that nothing on it ever asks for
 your attention.
 
 ```
