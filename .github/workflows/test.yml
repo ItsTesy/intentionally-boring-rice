@@ -11,22 +11,24 @@ jobs:
           - backend: pacman
             image: archlinux:base
             sync: pacman -Sy --noconfirm
-            query: pacman -Si
+            query: pacman -S --print-format %n
           - backend: apt
             image: debian:stable
             sync: apt-get update
-            query: apt-cache show
+            query: apt-get install -s -y
           - backend: dnf
             image: fedora:latest
             sync: 'true'
             query: dnf -q info
           - backend: zypper
             image: opensuse/tumbleweed
-            sync: zypper -q refresh
-            query: zypper -q info --match-exact
+            sync: zypper --non-interactive --quiet refresh
+            query: zypper --non-interactive install --dry-run
     container: ${{ matrix.image }}
     steps:
       - uses: actions/checkout@v4
+      # the installer asks the package manager to resolve a name, so the check
+      # asks the same question rather than looking for a literal package
       - name: every package name in the map still resolves
         run: |
           ${{ matrix.sync }} >/dev/null 2>&1 || true
