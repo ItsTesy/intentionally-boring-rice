@@ -642,16 +642,16 @@ summary() {
 footer() {
 	local t
 	if (( FOCUS == 2 )); then
-		if   (( COLS >= 60 )); then t='enter adds   shift+up/down moves   esc back   q quit'
-		elif (( COLS >= 44 )); then t='enter adds  shift+arrows  esc  q quit'
-		elif (( COLS >= 28 )); then t='enter adds  esc  q quit'
-		else t='esc  q quit'; fi
+		if   (( COLS >= 66 )); then t='enter adds   shift+up/down moves   esc back   i install'
+		elif (( COLS >= 44 )); then t='enter adds  shift+arrows  esc  i install'
+		elif (( COLS >= 28 )); then t='enter adds  esc  i install'
+		else t='esc  i  q'; fi
 	elif (( FOCUS == 1 )); then
-		if   (( COLS >= 60 )) && hasitems; then t='enter choose   right for items   esc back   q quit'
-		elif (( COLS >= 54 )); then t='up/down pick   enter choose   esc back   q quit'
-		elif (( COLS >= 44 )); then t='up/down  enter choose  esc  q quit'
-		elif (( COLS >= 28 )); then t='enter choose  esc  q quit'
-		else t='esc  q quit'; fi
+		if   (( COLS >= 66 )) && hasitems; then t='enter choose   right for items   esc back   i install'
+		elif (( COLS >= 54 )); then t='enter choose   esc back   i install   q quit'
+		elif (( COLS >= 44 )); then t='enter choose  esc  i install'
+		elif (( COLS >= 28 )); then t='enter choose  esc  i'
+		else t='esc  i  q'; fi
 	else
 		if   (( COLS >= 54 )); then t='up/down move   enter open   i install   q quit'
 		elif (( COLS >= 44 )); then t='up/down  enter open  i install  q quit'
@@ -805,23 +805,21 @@ while :; do
 			esac ;;
 		$'\033')  (( FOCUS )) && (( FOCUS-- )) ;;
 		i)
-			if (( ! FOCUS )); then
-				leave_alt
-				drain
-				{
-					printf 'WM=%s\n' "${SEL[wm]}"
-					printf 'BAR=%s\n' "${SEL[bar]}"
-					printf 'LAUNCHER=%s\n' "${SEL[launcher]}"
-					printf 'TERMINAL=%s\n' "${SEL[terminal]}"
-					printf 'NOTIFS=%s\n' "${SEL[notifs]}"
-					printf 'FASTFETCH=%s\n' "${SEL[fastfetch]}"
-					printf 'USE_AUR=%s\n' "${SEL[aur]:-no}"
-					printf 'ITEMS_LEFT=%q\n' "${SEL[barleft]}"
-					printf 'ITEMS_MID=%q\n' "${SEL[barmid]}"
-					printf 'ITEMS_RIGHT=%q\n' "${SEL[barright]}"
-				} > "$OUT"
-				exit 0
-			fi ;;
+			leave_alt
+			drain
+			{
+				printf 'WM=%s\n' "${SEL[wm]}"
+				printf 'BAR=%s\n' "${SEL[bar]}"
+				printf 'LAUNCHER=%s\n' "${SEL[launcher]}"
+				printf 'TERMINAL=%s\n' "${SEL[terminal]}"
+				printf 'NOTIFS=%s\n' "${SEL[notifs]}"
+				printf 'FASTFETCH=%s\n' "${SEL[fastfetch]}"
+				printf 'USE_AUR=%s\n' "${SEL[aur]:-no}"
+				printf 'ITEMS_LEFT=%q\n' "${SEL[barleft]}"
+				printf 'ITEMS_MID=%q\n' "${SEL[barmid]}"
+				printf 'ITEMS_RIGHT=%q\n' "${SEL[barright]}"
+			} > "$OUT"
+			exit 0 ;;
 		q)  leave_alt; exit 1 ;;
 	esac
 done
