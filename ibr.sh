@@ -166,7 +166,7 @@ buildsrc() {
 # a c array cannot hold a pipeline
 wrappers() {
 	local b=$HOME/.local/bin
-	mkdir -p "$b"
+	mkdir -p "$b" || die "cannot create $b"
 	{
 		printf '#!/bin/sh\n'
 		if [[ ${DS[$WM]} == w ]]; then
@@ -197,8 +197,8 @@ sub() {   # $1 file
 back_up() {   # $1 path under $CFG
 	local p=$CFG/$1
 	[[ -e $p ]] || return 0
-	mkdir -p "$BACKUP/$(dirname "$1")"
-	cp -rf "$p" "$BACKUP/$1"
+	mkdir -p "$BACKUP/$(dirname "$1")" || die "cannot write $BACKUP"
+	cp -rf "$p" "$BACKUP/$1" || die "cannot back up $p"
 	rm -rf "$p"
 }
 
@@ -206,8 +206,8 @@ place() {   # $1 source under configs/, $2 destination under $CFG
 	local s=$SRC/configs/$1 d=$CFG/$2 f
 	[[ -e $s ]] || return 0
 	back_up "$2"
-	mkdir -p "$(dirname "$d")"
-	cp -rf "$s" "$d"
+	mkdir -p "$(dirname "$d")" || die "cannot create $(dirname "$d")"
+	cp -rf "$s" "$d" || die "cannot write $d"
 	if [[ -d $d ]]; then
 		while IFS= read -r f; do sub "$f"; done < <(find "$d" -type f)
 	else
@@ -217,7 +217,7 @@ place() {   # $1 source under configs/, $2 destination under $CFG
 
 write_autostart() {
 	local f=$CFG/ibr/autostart
-	mkdir -p "$CFG/ibr"
+	mkdir -p "$CFG/ibr" || die "cannot create $CFG/ibr"
 	{
 		printf '#!/bin/sh\n'
 		printf '# written by ibr, edit freely\n\n'
@@ -584,6 +584,10 @@ pick another or turn the aur on" 3
 	printf '\n'
 	local n=0
 	(( DRY )) || n=$(find "$CFG" -newer "$BACKUP" -type f 2>/dev/null | grep -c .)
+	if (( ! DRY && n == 0 )); then
+		die "installed the packages but could not write a single config file. \
+check that you own $CFG"
+	fi
 	local bin; bin=$(wmbin "$WM")
 	if (( ! DRY )) && ! command -v "$bin" >/dev/null && [[ ! -x /usr/local/bin/$bin ]]; then
 		die "$WM said it installed but there is no $bin on PATH"
