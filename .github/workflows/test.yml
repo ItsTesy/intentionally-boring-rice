@@ -1,0 +1,92 @@
+name: test
+on: [push, pull_request]
+
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - backend: pacman
+            image: archlinux:base
+            sync: pacman -Sy --noconfirm
+            query: pacman -Si
+          - backend: apt
+            image: debian:stable
+            sync: apt-get update
+            query: apt-cache show
+          - backend: dnf
+            image: fedora:latest
+            sync: 'true'
+            query: dnf -q info
+          - backend: zypper
+            image: opensuse/tumbleweed
+            sync: zypper -q refresh
+            query: zypper -q info --match-exact
+    container: ${{ matrix.image }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: every package name in the map still resolves
+        run: |
+          ${{ matrix.sync }} >/dev/null 2>&1 || true
+          bad=0
+          while IFS="$(printf '\t')" read -r b c p; do
+            [ "$b" = "${{ matrix.backend }}" ] || continue
+            [ -n "$p" ] || continue
+            for one in $p; do
+              ${{ matrix.query }} "$one" >/dev/null 2>&1 || { echo "GONE $c -> $one"; bad=1; }
+            done
+          done < data/packages.tsv
+          exit $bad
+
+  install:
+    runs-on: ubuntu-latest
+    container:
+      image: archlinux:base
+      options: --user root
+    steps:
+      - uses: actions/checkout@v4
+      - name: set up a non-root user
+        run: |
+          pacman -Sy --noconfirm --needed sudo git base-devel jq python >/dev/null
+          useradd -m t && echo 't ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
+          chmod -R a+rX .
+      - name: install every window manager this system can install
+        run: |
+          all="sway niri hyprland swayfx river wayfire dwl mangowm
+               i3 bspwm dwm awesome qtile openbox icewm xmonad"
+          did=0 refused=0
+          for w in $all; do
+            set +e
+            sudo -u t env WM=$w IBR_SRC=$PWD HOME=/tmp/h$w bash ibr.sh -y >/tmp/log 2>&1
+            rc=$?
+            set -e
+            # 3 means the table says this system cannot install it
+            if [ $rc -eq 3 ]; then
+              echo "refused $w"
+              refused=$((refused + 1))
+              continue
+            fi
+            [ $rc -eq 0 ] || { echo "FAILED $w (rc=$rc)"; tail -20 /tmp/log; exit 1; }
+            left=$(grep -rl '@TERM@\|@MENU@\|@SHOT@' /tmp/h$w/.config 2>/dev/null | wc -l)
+            [ "$left" -eq 0 ] || { echo "$w: $left files still hold placeholders"; exit 1; }
+            sh -n /tmp/h$w/.config/ibr/autostart || { echo "$w: bad autostart"; exit 1; }
+            echo "ok $w"
+            did=$((did + 1))
+          done
+          echo "$did installed, $refused refused"
+          [ "$did" -ge 13 ] || { echo "only $did installed, something regressed"; exit 1; }
+          [ "$refused" -le 3 ] || { echo "$refused refused, the table lost entries"; exit 1; }
+
+  configs:
+    runs-on: ubuntu-latest
+    container: archlinux:base
+    steps:
+      - uses: actions/checkout@v4
+      - name: install the checkers
+        run: |
+          pacman -Sy --noconfirm --needed sway i3-wm awesome qtile dunst foot \
+            tint2 fuzzel libxml2 libcap python python-yaml >/dev/null
+      - name: every config parses
+        run: bash test/validate.sh
